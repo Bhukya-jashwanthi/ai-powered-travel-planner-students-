@@ -1,48 +1,48 @@
-# AI-Powered Student Travel Planner 🌍✈️
+# 🌍 AI-Powered Travel Planner for Students
 
-Planning trips can be incredibly time-consuming and expensive, especially for students operating on strict financial constraints. Traditional travel applications often provide generic, costly suggestions. 
-
-The **AI-Powered Student Travel Planner** is a responsive web application designed to solve this problem. By combining user preferences with generative AI, it creates customized, budget-friendly, day-by-day itineraries tailored specifically for low-budget student travelers.
-
----
+Planning trips is time-consuming and expensive, especially for students on a tight budget. This web app uses Google Gemini to generate personalized, budget-friendly, day-by-day travel itineraries.
 
 ## 🚀 Features
-
-- **Budget-Centric Optimization:** Automatically prioritizes affordable accommodation, food, and sightseeing options based on specific student financial limits.
-- **Dynamic Itinerary Generation:** Leverages advanced generative AI to create customized, day-by-day schedules in real time.
-- **Tailored Inputs:** Accepts user-defined variables including destination, trip duration, maximum budget constraints, and personal activity preferences.
-- **No Generic Suggestions:** Eliminates cookie-cutter travel plans by generating unique itineraries dynamically centered around user constraints.
-
----
+- **Personalized itineraries** based on destination, trip length, budget, interests and accommodation preference
+- **Day-by-day plan** with morning, afternoon and evening activities
+- **Food, accommodation and transport suggestions**
+- **Estimated budget breakdown** (stay, food, transport, activities)
+- **Student travel tips**, including discounts
+- **Automatic retry** when the AI service is busy
 
 ## 🛠️ Tech Stack
+- **Python**
+- **Streamlit**: web interface
+- **Google Gemini API** (`google-genai` SDK): itinerary generation
 
-- **Frontend Interface:** [Streamlit](https://streamlit.io/) (Python-based web framework)
-- **Backend Core:** Python
-- **Generative AI Engine:** Google Gemini API
-- **Data Structuring:** JSON Parsing & Data Formats
+## 💻 How to Run Locally
 
----
-
-## 💻 How to Run the Project
-
-Follow these steps to set up and run the web application locally on your machine:
-
-### 1. Clone the Repository
+**1. Clone the repository**
 ```bash
-git clone [https://github.com/your-username/ai-student-travel-planner.git](https://github.com/your-username/ai-student-travel-planner.git)
-cd ai-student-travel-planner
+git clone https://github.com/Bhukya-jashwanthi/ai-powered-travel-planner-students-.git
+cd ai-powered-travel-planner-students-
 ```
-2. Install Required Dependencies
-Ensure you have Python installed, then run:
 
-Bash
-pip install streamlit google-generativeai
-3. Set Up Your Gemini API Key
-Make sure you have a valid API key from Google AI Studio. You can set it as an environment variable or include it securely within your configuration files.
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-4. Launch the Web Application
-Run the Streamlit application using the terminal:
+**3. Add your Gemini API key**
 
-Bash
+Get a free key from [Google AI Studio](https://aistudio.google.com/). Then create a file `.streamlit/secrets.toml`:
+```toml
+GEMINI_API_KEY = "your-api-key-here"
+```
+> ⚠️ Never commit this file. It is already listed in `.gitignore`.
+
+**4. Run the app**
+```bash
 streamlit run app.py
+```
+
+## 📸 Screenshot
+![App screenshot](screenshot.png)
+
+## ⚠️ Disclaimer
+AI-generated prices, opening hours and availability may be inaccurate. Always verify details before booking.
