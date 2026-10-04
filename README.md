@@ -1,4 +1,4 @@
-# 🌍 ai-travel-planner-students
+# 🌍 AI Travel Planner for Students
 
 Planning trips is time-consuming and expensive, especially for students on a tight budget. This web app uses Google Gemini to generate personalized, budget-friendly, day-by-day travel itineraries.
 
