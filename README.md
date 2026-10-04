@@ -1,4 +1,4 @@
-# 🌍 AI-Powered Travel Planner for Students
+# 🌍 ai-travel-planner-students
 
 Planning trips is time-consuming and expensive, especially for students on a tight budget. This web app uses Google Gemini to generate personalized, budget-friendly, day-by-day travel itineraries.
 
@@ -19,8 +19,8 @@ Planning trips is time-consuming and expensive, especially for students on a tig
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/Bhukya-jashwanthi/ai-powered-travel-planner-students-.git
-cd ai-powered-travel-planner-students-
+git clone https://github.com/Bhukya-jashwanthi/ai-travel-planner-students.git
+cd ai-travel-planner-students
 ```
 
 **2. Install dependencies**
